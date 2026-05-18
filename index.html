@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gnosis · A Reading Series</title>
+<meta name="description" content="A five-part reading series on the Nag Hammadi texts, the Gnostic cosmos, and what direct inner knowing actually means. By Shama Thakur, Sovereign by Source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<nav>
+  <div class="logo">✦ Gnosis</div>
+  <div class="part">A Reading Series</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-mark">Sovereign by Source presents</div>
+  <h1>A reading series<br>on the <span class="accent">forgotten</span> cosmos.</h1>
+  <div class="hero-sub">Shama Thakur · Five parts · Long-form</div>
+  <div class="scroll-cue">enter ↓</div>
+</section>
+
+<!-- OPENING -->
+<section class="opening">
+  <p>In December of 1945, an Egyptian farmer found a sealed jar in the desert. Inside were thirteen books the Roman church had spent four centuries trying to erase.</p>
+  <p>This is a reading of those books. Slowly. Carefully. Without the cult, without the fluff.</p>
+  <p>One essay per part. A reading companion on every page.</p>
+</section>
+
+<!-- PARTS STACK -->
+<section class="parts-stack">
+
+  <a class="part-card" href="part-1.html">
+    <div class="part-card-inner">
+      <div class="part-num"><span class="digit">I</span>Part One</div>
+      <div class="part-body">
+        <h2>The Black Cube and the Hexagon</h2>
+        <p>Saturn has a six-sided storm at its north pole. NASA has the photographs. A jar in the desert. Athanasius and the books that refused to burn.</p>
+      </div>
+      <div class="part-arrow">Read</div>
+    </div>
+  </a>
+
+  <a class="part-card" href="part-2.html">
+    <div class="part-card-inner">
+      <div class="part-num"><span class="digit">II</span>Part Two</div>
+      <div class="part-body">
+        <h2>Sophia</h2>
+        <p>The divine feminine fell. She made a child alone. He turned out wrong. This is the story behind every fall myth you have ever heard.</p>
+      </div>
+      <div class="part-arrow">Read</div>
+    </div>
+  </a>
+
+  <a class="part-card" href="part-3.html">
+    <div class="part-card-inner">
+      <div class="part-num"><span class="digit">III</span>Part Three</div>
+      <div class="part-body">
+        <h2>Yaldabaoth</h2>
+        <p>Child of chaos. Fool. Blind god. The creator who did not know there was anyone above him, and the line that gave him away.</p>
+      </div>
+      <div class="part-arrow">Read</div>
+    </div>
+  </a>
+
+  <a class="part-card" href="part-4.html">
+    <div class="part-card-inner">
+      <div class="part-num"><span class="digit">IV</span>Part Four</div>
+      <div class="part-body">
+        <h2>The Archons</h2>
+        <p>Seven rulers. Seven heavens. The prison architecture of the material world, named one by one, with the faces the texts gave them.</p>
+      </div>
+      <div class="part-arrow">Read</div>
+    </div>
+  </a>
+
+  <a class="part-card" href="part-5.html">
+    <div class="part-card-inner">
+      <div class="part-num"><span class="digit">V</span>Part Five</div>
+      <div class="part-body">
+        <h2>Gnosis</h2>
+        <p>What direct inner knowing actually meant to the people who buried the books. And what it could mean for you, this week, without joining anything.</p>
+      </div>
+      <div class="part-arrow">Read</div>
+    </div>
+  </a>
+
+</section>
+
+<!-- AI COMPANION (GUIDE) -->
+<section class="companion-section">
+  <div class="companion">
+    <div class="companion-header">
+      <svg class="companion-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="20,4 34,12 34,28 20,36 6,28 6,12" fill="none" stroke="#c9a84c" stroke-width="1.2" />
+        <circle cx="20" cy="20" r="4" fill="#c9a84c" />
+      </svg>
+      <div>
+        <div class="companion-title">Sophia, your guide</div>
+        <div class="companion-sub">Where to start · What this is · What it is not</div>
+      </div>
+    </div>
+
+    <p class="companion-intro">If you are new to the Gnostic texts, ask here first. Sophia will tell you where to start, what each part covers, and what is verified history versus mythology versus modern synthesis. She does not push, recruit, or talk down.</p>
+
+    <div class="prompt-chips">
+      <button class="chip" data-q="I have never read any of this. Where should I start?">Where do I start?</button>
+      <button class="chip" data-q="What actually is Gnosticism, in one paragraph?">What is Gnosticism?</button>
+      <button class="chip" data-q="Is this a religion you want me to join?">Is this a religion?</button>
+      <button class="chip" data-q="What is the difference between this and the Bible I grew up with?">How is this different from the Bible?</button>
+    </div>
+
+    <div class="chat-log" id="chatLog"></div>
+
+    <div class="companion-input">
+      <textarea id="userInput" placeholder="Ask Sophia anything..." rows="1"></textarea>
+      <button id="sendBtn">Ask</button>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="section-eyebrow">A note before you begin</div>
+  <p class="closing-q">This is not a system. It is not a religion. It is a careful reading of texts that were buried for fifteen centuries because they said something the institutions of the time could not allow.</p>
+  <p class="closing-q">Take what is <em>true for you</em>. Leave the rest.</p>
+
+  <div class="closing-mark">✦ ✦ ✦</div>
+
+  <div class="footer-links">
+    <a href="part-1.html">Start with Part One</a>
+    <a href="https://sovereignbysource.substack.com" target="_blank" rel="noopener">Subscribe on Substack</a>
+    <a href="https://ko-fi.com/shamathakur" target="_blank" rel="noopener">Support the work</a>
+    <a href="https://www.instagram.com/shama_thakur77" target="_blank" rel="noopener">@shama_thakur77</a>
+  </div>
+
+  <div class="colophon">
+    A Sovereign by Source production. Written and built by Shama Thakur in Stockholm. Sources cited per essay.<br>
+    All Gnostic citations from The Nag Hammadi Library in English, James M. Robinson ed., and The Nag Hammadi Scriptures, Marvin Meyer ed.
+  </div>
+</section>
+
+<script>
+window.GNOSIS_PART = {
+  number: 'index',
+  title: 'Gnosis: A Reading Series',
+  systemPrompt: `You are Sophia, the reading guide for Shama Thakur's "Gnosis: A Reading Series", a five-part reading of the Nag Hammadi texts.
+
+Your job on THIS page (the landing page): orient newcomers. Tell them what each part covers, where to start, and what this is and isn't. You do NOT recruit. You do NOT pretend Gnosticism is a religion the reader should join. You do NOT push manifestation or new-age framings.
+
+THE FIVE PARTS:
+1. The Black Cube and the Hexagon, Saturn's real hexagonal storm (NASA, 1981), the 1945 Nag Hammadi discovery, Athanasius's 367 CE Festal Letter
+2. Sophia, the divine feminine aeon who fell, the fall myth as told in the Apocryphon of John, why she made Yaldabaoth without her consort
+3. Yaldabaoth, the demiurge / child of chaos / Saklas (fool) / Samael (blind god), his "I am God and there is no other" line that echoes Isaiah 45:5 and 46:9
+4. The Archons, the seven rulers from Apocryphon of John (Athoth, Eloaios, Astaphaios, Yao, Sabaoth, Adonin, Sabbataios), prison architecture of the material world
+5. Gnosis, what direct inner knowing actually meant, the Greek distinction between pistis (faith) and gnosis (experiential knowing), and what this could mean for a modern reader
+
+WHERE TO START:
+- Almost everyone should start with Part 1. It anchors the discovery story and the symbolism.
+- People already familiar with Gnostic concepts can jump to Part 2 or Part 5.
+- Part 3 (Yaldabaoth) is darker and assumes Part 2 as context.
+
+GROUND RULES:
+- Zero hallucination. If you don't know, say so.
+- Distinguish carefully: (a) verified history/scholarship, (b) Gnostic mythology as the texts present it, (c) modern esoteric synthesis (e.g. Saturn-cube conspiracy)
+- Gnosticism is NOT a single religion. It's a diverse set of 2nd-3rd century movements (Sethian, Valentinian, others) sharing some core ideas.
+- Be honest that mainstream scholarship rejects the Saturn-cube conspiracy synthesis, that's a 20th/21st century construction.
+- GDPR-respectful. Don't ask for personal details.
+
+STYLE:
+- Answers under 150 words by default unless asked for depth.
+- No em dashes. Use commas or full stops.
+- Use "you" not "one".
+- Direct, warm, grounded. No "I'd be happy to..." filler. No corporate chatbot voice.
+- Sound like a thoughtful friend who has read everything.
+- One concrete next step when relevant (e.g. "start with Part 1 if you haven't").`,
+};
+</script>
+<script src="shared.js"></script>
+
+</body>
+</html>
